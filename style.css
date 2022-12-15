@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/* bodyとmain */
+
+body {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+main {
+  width: 960px;
+  height: 540px;
+  background-color: #ecd6c7;
+  color: #716e77;
+}
+
+/* ここからclass */
+
+.centerleft {
+  margin: 16px auto;
+  text-align: center;
+  display: block;
+}
+
+.centerleft .text {
+  text-align: left;
+  display: inline-block;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photograph img {
+  float: right;
+  width: 150px;
+  margin: 10px 0px 0px 30px;
+  border: 10px solid #fff;
+}
+
+.under {
+  border-bottom: none;
+}
+
+.go {
+  border-bottom: none;
+}
+
+/* ここからid */
+
+#top,
+#midashi,
+#shop_b {
+  text-align: center;
+}
+
+#top {
+  padding-top: 100px;
+}
+
+#top h1 {
+  font-size: 60px;
+}
+
+#top h2 {
+  margin-top: -30px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+#midashi {
+  padding-top: 10px;
+}
+
+#shop_b {
+  margin-top: 40px;
+}
+
+#abno,
+#bridge {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+#imgleft {
+  margin-top: 100px;
+}
+
+/* 見出しなど */
+
+h1,
+h2,
+#start,
+#abno_b2,
+#bridge_b2 {
+  font-family: "Segoe Script", "Monotype Corsiva";
+}
+
+h1,
+h2 {
+  color: #a39391;
+}
+
+h3 {
+  text-align: left;
+}
+
+#midashi h2 {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#midashi h2::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #a39391;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform 0.3s;
+}
+
+#midashi h2:hover::after {
+  transform: scale(1, 1);
+}
+
+dl {
+  margin-top: 0;
+}
+
+dt {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+dd {
+  margin-left: 40px;
+}
+
+/* ボタン */
+
+#start {
+  background: transparent;
+  border: none;
+  color: #e79686;
+  font-size: 50px;
+  /* ここからhover */
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#start::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #e79686;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+#start:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+#abno_b,
+#bridge_b {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #e79686;
+  border-radius: 50%;
+  border: none;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+}
+
+#abno_b:hover,
+#bridge_b:hover {
+  background-color: #e9a192;
+}
+
+#abno_b2,
+#bridge_b2 {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  color: #716e77;
+  /* ここからhover */
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#abno_b2::after,
+#bridge_b2::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #a39391;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+#abno_b2:hover::after,
+#bridge_b2:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+#abno_b2 {
+  margin-top: 45px;
+  margin-left: 706px;
+}
+
+#bridge_b2 {
+  margin-top: 18px;
+  float: right;
+}

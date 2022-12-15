@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* bodyとmain */
+
+body {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  background-color: #ecd6c7;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+main {
+  color: #716e77;
+}
+
+/* ここからclass */
+
+.centerleft {
+  margin: 16px auto;
+  text-align: center;
+  display: block;
+}
+
+.centerleft .text {
+  text-align: left;
+  display: inline-block;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photograph img {
+  width: 390px;
+  margin: 0px 5px 0px 5px;
+  border: 5px solid #fff;
+}
+
+.button_2 {
+  text-align: center;
+}
+
+.under {
+  border-bottom: solid #a39391;
+}
+
+.go {
+  border-bottom: solid #e9a192;
+}
+
+/* ここからid */
+
+#top,
+#midashi,
+#shop_b {
+  text-align: center;
+}
+
+#top {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#top h1 {
+  font-size: 60px;
+}
+
+#top h2 {
+  margin-top: -20px;
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+
+#midashi {
+  padding-top: 10px;
+}
+
+#shop_b {
+  margin-top: 40px;
+}
+
+#abno,
+#bridge {
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#imgleft {
+  float: center;
+  margin-top: 50px;
+}
+
+/* 見出しなど */
+h3 {
+  font-size: 25px;
+}
+
+dl {
+  margin-top: 920px;
+}
+
+/* ボタン */
+
+#abno_b,
+#bridge_b {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  color: #fff;
+  background-color: #e79686;
+  border-radius: 50%;
+  border: none;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+}
+
+#abno_b:hover,
+#bridge_b:hover {
+  background-color: #e9a192;
+}

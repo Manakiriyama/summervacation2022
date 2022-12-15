@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link href="smartphone.css" rel="stylesheet" type="text/css" />
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 600px) and (max-width: 959px)"/>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen and (min-width: 960px)" /> -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>Summer Vacation 2022</title>
+    <script>
+      $(function () {
+        "use strict";
+
+        $("#midashi").hide();
+        $("#shop_b").hide();
+        $("#abno").hide();
+        $("#bridge").hide();
+        $("#start").on("click", function(){
+          $("#midashi").fadeIn(1000);
+          $("#shop_b").fadeIn(1000);
+          $("#top").hide();
+        })
+
+        $("#abno_b").on("click", function(){
+          $("#abno").fadeIn(1000);
+          $("#shop_b").hide();
+        })
+
+        $("#bridge_b").on("click", function(){
+          $("#bridge").fadeIn(1000);
+          $("#shop_b").hide();
+        })
+
+        $("#abno_b2").on("click", function(){
+          $("#abno").fadeIn(1000);
+          $("#bridge").hide();
+          let position = 0;
+          let speed = 600;
+          $("html,body").animate({scrollTop:position},speed);
+        })
+
+        $("#bridge_b2").on("click", function(){
+          $("#bridge").fadeIn(1000);
+          $("#abno").hide();
+          let position = 0;
+          let speed = 600;
+          $("html,body").animate({scrollTop:position},speed);
+        })
+
+        $("#midashi").on("click", function () {
+          $("#top").fadeIn(700);
+          $("#midashi").hide();
+          $("#shop_b").hide();
+          $("#abno").hide();
+          $("#bridge").hide();
+        })
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <div id="top">
+        <h1>
+          Summer Vacation 2022
+        </h1>
+        <h2>in Ningyocho</h2>
+        <p>
+          <button id="start">
+            <span class="go">
+              Go >>
+            </span>
+          </button>
+        </p>
+      </div>
+        
+      <div id="midashi">
+        <h2>Summer Vacation 2022</h2>
+      </div>
+  
+      <div class="centerleft">
+        <span id="shop_b">
+          <p class="text">
+            - August 12th<br>
+            - around Ningyocho Station<br>
+            - with Yurika<br>
+          </p>
+          <p class="inner">
+            <button id="abno_b"><strong><br><br>abno<br><br>- Lunch -</strong></button>
+            <button id="bridge_b"><strong><br>Bridge<br><br>COFFEE & ICECREAM<br><br>- Cafe -</strong></button>
+          </p>
+        </span>
+      </div>
+        
+      <div id="abno">
+        <h3>abno</h3>
+        <p class="photograph">
+          <img src="image/IMG-0372.jpg" alt="パスタ">
+          <img id="imgleft" src="image/IMG-0384.jpg" alt="レモンスカッシュ">
+          <dl>
+            <dt>住所</dt>
+            <dd>東京都中央区日本橋馬喰町2-2-1 DDD HOTEL</dd>
+            <dt>アクセス</dt>
+            <dd>馬喰横山・馬喰町・浅草橋駅　徒歩4分</dd>
+            <dd>東日本橋駅　徒歩6分</dd>
+            <dt>営業時間</dt>
+            <dd>Breakfast|7:00-10:00</dd>
+            <dd>Lunch|10:00-14:00</dd>
+            <dd>Cafe|14:00-19:00(LO 18:30)</dd>
+            <dt>定休日</dt>
+            <dd>不定休</dd>
+          </dl>
+        </p>
+        <p class="button_2">
+          <button id="bridge_b2">
+            <span class="under">
+              Bridge COFFEE & ICECREAM >>
+            </span>
+          </button>
+        </p>
+      </div>
+      
+      <div id="bridge">
+        <h3>Bridge COFFEE & ICECREAM</h3>
+        <p class="photograph">
+          <img src="image/bridge.jpg" alt="bridge">
+          <img id="imgleft" src="image/icecream.jpg" alt="アイスクリームとアイスカフェラテ">    
+          <dl>
+            <dt>住所</dt>
+            <dd>東京都中央区日本橋馬喰町1-13-9 イーグルビル 1F</dd>
+            <dt>アクセス</dt>
+            <dd>馬喰町駅　徒歩1分</dd>
+            <dt>営業時間</dt>
+            <dd>9:00-19:00</dd>
+            <dt>定休日</dt>
+            <dd>不定休</dd>
+          </dl>
+        </p>
+        <p class="button_2">
+          <button id="abno_b2">
+            <span class="under">
+              abno >>
+            </span>
+          </button>
+        </p>      
+      </div>
+        
+    </main>
+  </body>
+</html>
